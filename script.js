@@ -454,7 +454,7 @@ async function sendMessage() {
     const { lat, lng } = getUserLocation();
     console.log("Sending with location — lat:", lat, "lng:", lng);
 
-    const response = await fetch("http://localhost:8001/chat", {
+    const response = await fetch("https://api.cesc.co.in/chat", {
       method: "POST",
       headers: { "Content-Type": "application/json" },
       body: JSON.stringify({
